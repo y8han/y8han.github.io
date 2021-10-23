@@ -29,7 +29,7 @@
               <p style="text-align:center">
                 <name>Yunhai Han</name>
               </p>
-              <p>Welcome! My name is Yunhai Han and I am a Research Assistant at Georgia Institute of Technology. Before coming to GaTech, I received my B.S. / M.S. in Mechanical Engineering from UCSD, 2021 and Yanshan University, 2019, respectively.
+              <p>Welcome! My name is Yunhai Han and I am a Research Assistant of <a href="https://lab-idar.gatech.edu//">LIDAR Lab</a> at Georgia Institute of Technology led by Prof. Zhao Ye. Before coming to Georgia Tech, I received my B.S. / M.S. in Mechanical Engineering from UCSD, 2021 and Yanshan University, 2019, respectively.
                 </p>
               
               <p style="text-align:center">
@@ -49,8 +49,8 @@
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
-              <p> I have a broad interest in Robotics, Computer Vision and Control, especially robotic perception for manipulation and control. 
-                I enjoy developing algorithms for robot applications and I would like to explore how robots could learn and perceive the world to achieve high-level automation in dynamic environments. 
+              <p> I have a broad interest in Robotics, Computer Vision and Control, especially robotic perception for manipulation and control under complex environments. 
+                I enjoy developing algorithms for robotic applications and I would like to explore how robots could learn and perceive the world to achieve high-level automation in dynamic environments. 
 	      </p>
 	      <p>My love to robotics stems from a famous Japanese anime series:<em><a href="https://en.wikipedia.org/wiki/Code_Geass">Code Geass(コードギアス 反逆のルルーシュ)</a></em>. I was dreaming of building a macha when I was a high school studnent.
               </p>
@@ -196,9 +196,9 @@
               <br>
               <b>Yunhai Han</b> and Sonia Martínez
               <br>
-        <em>Under review of L-CSS and ACC</em>, 2022
+        <em>Under revision and resubmission for L-CSS and ACC</em>, 2022
               <br>
-		This work proposes a numerical method to verify differential privacy in estimation with performance guarantees. To achieve differential privacy, a mechanism (estimation) is
+		This work proposes a numerical method to verify differential privacy in estimation with performance guarantees. To achieve differential privacy, a mechanism (estimator) is
 turned into a stochastic mapping; which makes it hard to distinguish outputs produced by close inputs. While obtaining theoretical conditions that guarantee privacy may be possible,
 verifying these in practice can be hard.
 	      <br>
@@ -207,6 +207,43 @@ verifying these in practice can be hard.
             </td>
           </tr>
 	</table>
+
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="auto-calibration" onmouseover="auto-calibration">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/avs.png' width="180"></div>
+                <img src='images/avs.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function keypoint_start() {
+                  document.getElementById('ff_image').style.opacity = "1";
+                }
+
+                function keypoint_stop() {
+                  document.getElementById('ff_image').style.opacity = "0";
+                }
+                keypoint_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Autonomous Vehicles for Micro-mobility
+                </papertitle>
+              </a>
+              <br>
+              Henrik Christensen, David Paz, Hengyuan Zhang, Dominique Meyer, Hao Xiang, <b>Yunhai Han</b>, Yuhan Liu, Andrew Liang, Zheng Zhong, Shiqi Tang
+              <br>
+        <em>Accepted by Autonomous Intelligent System (to appear)</em>, 2021
+              <br>
+		My dear teammates at <a href="http://avl.ucsd.edu//">AVL lab</a> and I warpped up the technical details when we explored and developed robust autonomous car systems and architectures for mail-delivery and micro-transit applications on UCSD campus. In this paper, we first tell the details of the initial design experiments and the main lessons/short-comings from the deployments. Then, we present the various approaches to address these challenges. Finally, we outline our future work. My work for this journal paper mainly involves the auto-calibration system for urban autonomous driving.
+	      <br>
+              [<a href="http://avl.ucsd.edu/?page_id=248">Website</a>]
+              <p></p>
+            </td>
+          </tr>
+	</table>
+
 
          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
@@ -237,7 +274,7 @@ verifying these in practice can be hard.
             <td style="padding:20px;width:75%;vertical-align:middle">
               </a>
               <br><b>Goal:</b>
-		We aim to make the PBD framework differentialble so that we can employ the same strategy as used in neural network to obtain the optimal control actions. The animation (prelimary results) shown in the left demonstrates how the control actions are improved in simulation since the selected nodes are dragged to target positions. <b>This work is taken over by current lab members at <a href="https://www.ucsdarclab.com/">ARCLab</a>. Hope they can make some productive results :></b>
+		We aim to make the PBD framework differentiable so that we can employ the same strategy as used in neural network to obtain the optimal control actions. The animation (prelimary results) shown in the left demonstrates how the control actions are improved in simulation since the selected nodes are dragged to target positions. <b>This work is now taken over by current lab members at <a href="https://www.ucsdarclab.com/">ARCLab</a>. Hope they can obtain some promising results. :></b>
               <br 
               <p></p>
             </td>
@@ -245,6 +282,34 @@ verifying these in practice can be hard.
           </table>
 
 
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="DifferentialPBD" onmouseover="DifferentialPBD">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/transformer.png' width="180"></div>
+                <img src='images/transformer.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function superdeep_start() {
+                  document.getElementById('ff_image').style.opacity = "1";
+                }
+
+                function superdeep_stop() {
+                  document.getElementById('ff_image').style.opacity = "0";
+                }
+                superdeep_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              </a>
+              <br><b>Goal:</b>
+		Reliable robotic grasping with deformable objects remains a challenging task due to underactuated contact interactions with a gripper, unknown object dynamics, and variable object geometries. In this study, we propose a Transformer-based robot grasping framework for rigid grippers that leverage tactile information from a GelSight sensor for safe object grasping. The Transformer network learns physical feature embeddings from visual & tactile feedback and predict a final grasp through a multilayer perceptron (MLP) with grasping strength. Using these predictions, an optimal force is commanded to the gripper for safe grasping tasks. <b>This work is now led by me at LIDAR. We have achieved some promising results and plan to submit it to RA-L after finishing all the robot tests.</b>
+              <br 
+              <p></p>
+            </td>
+          </tr> 
+          </table>
 
 
 
@@ -299,6 +364,10 @@ verifying these in practice can be hard.
               <strong>AIM-2021</strong><br>
               Program Committee Member(Reviewer)<br>
               </p>
+              <p>
+              <strong>ICRA-2022</strong><br>
+              Program Committee Member(Reviewer)<br>
+              </p>
             </td>
             </tr>
         </tbody></table>
@@ -309,11 +378,23 @@ verifying these in practice can be hard.
               <heading>Teaching Experience</heading>
               <p>
               <strong>MAE145, Robotic Planning & Estimation, UCSD</strong><br>
-		21Winter, Teaching Assitant<br>
+		21Winter, Teaching Assistant<br>
               </p>
               <p>
               <strong>MAE146, Introduction to ML Algorithms, UCSD</strong><br>
-		21Spring, Teaching Assitant<br>
+		21Spring, Teaching Assistant<br>
+              </p>
+            </td>
+            </tr>
+        </tbody></table>
+
+<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Working Experience</heading>
+              <p>
+              <strong>Research Assistant, Georgia Institute of Technology</strong><br>
+		21Summer ~ Present<br>
               </p>
             </td>
             </tr>
@@ -326,7 +407,7 @@ verifying these in practice can be hard.
               <p>
               <strong>Running</strong>: Once finished half-marathon (21km) within 2 hours <br>
                 <strong>Gaming</strong>: League of Legend<br> 
-                <strong>Anime, Manga and Movie</strong>: Big fan of Japanese Anime-world<br>
+                <strong>Anime, Manga and Movie</strong><br>
               </p>
             </td>
             </tr>
