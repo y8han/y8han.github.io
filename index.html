@@ -244,6 +244,42 @@ verifying these in practice can be hard.
           </tr>
 	</table>
 
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="DifferentialPBD" onmouseover="DifferentialPBD">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/transformer.png' width="180"></div>
+                <img src='images/transformer.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function superdeep_start() {
+                  document.getElementById('ff_image').style.opacity = "1";
+                }
+
+                function superdeep_stop() {
+                  document.getElementById('ff_image').style.opacity = "0";
+                }
+                superdeep_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Autonomous Vehicles for Micro-mobility
+                </papertitle> Learning Generalizable Vision-Tactile Robotic Grasping Strategy for Deformable Objects via Transformer
+              </a>
+              <br>
+              <b>Yunhai Han</b>, Rahul Batra, Nathan Boyd, Tuo Zhao, Yu She, Seth Hutchinson, and Ye Zhao
+              <br>
+		<em>Under review by RA-L</em>
+              <br><b>Goal:</b>
+		Reliable robotic grasping with deformable objects remains a challenging task due to underactuated contact interactions with a gripper, unknown object dynamics, and variable object geometries. In this study, we propose a Transformer-based robot grasping framework for rigid grippers that leverage tactile information from a GelSight sensor for safe object grasping. The Transformer network learns physical feature embeddings from visual & tactile feedback and predict a final grasp through a multilayer perceptron (MLP) with grasping strength. Using these predictions, the gripper is commanded with an optimal force for safe grasping tasks.
+              <br>
+	      [<a href="https://github.com/GTLIDAR/DeformableObjectsGrasping">Webpage</a>]
+              <p></p>
+            </td>
+          </tr> 
+          </table>
+
 
          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
@@ -276,37 +312,6 @@ verifying these in practice can be hard.
               <br><b>Goal:</b>
 		We aim to make the PBD framework differentiable so that we can employ the same strategy as used in neural network to obtain the optimal control actions. The animation (prelimary results) shown in the left demonstrates how the control actions are improved in simulation since the selected nodes are dragged to target positions. <b>This work is now taken over by current lab members at <a href="https://www.ucsdarclab.com/">ARCLab</a>. Hope they can obtain some promising results. :></b>
               <br 
-              <p></p>
-            </td>
-          </tr> 
-          </table>
-
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="DifferentialPBD" onmouseover="DifferentialPBD">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ff_image'>
-                  <img src='images/transformer.png' width="180"></div>
-                <img src='images/transformer.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function superdeep_start() {
-                  document.getElementById('ff_image').style.opacity = "1";
-                }
-
-                function superdeep_stop() {
-                  document.getElementById('ff_image').style.opacity = "0";
-                }
-                superdeep_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              </a>
-              <br><b>Goal:</b>
-		Reliable robotic grasping with deformable objects remains a challenging task due to underactuated contact interactions with a gripper, unknown object dynamics, and variable object geometries. In this study, we propose a Transformer-based robot grasping framework for rigid grippers that leverage tactile information from a GelSight sensor for safe object grasping. The Transformer network learns physical feature embeddings from visual & tactile feedback and predict a final grasp through a multilayer perceptron (MLP) with grasping strength. Using these predictions, an optimal force is commanded to the gripper for safe grasping tasks. <b>This work is now led by me at LIDAR. We have achieved some promising results and plan to submit it to RA-L after finishing all the robot tests.</b>
-              <br>
-	      [<a href="https://github.com/GTLIDAR/DeformableObjectsGrasping">Webpage</a>]
               <p></p>
             </td>
           </tr> 
