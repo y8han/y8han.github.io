@@ -360,7 +360,35 @@ verifying these in practice can be hard.
           </table>
 
 
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="DexterousManipulation" onmouseover="DexterousManipulation">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/dexterous_manipulation.gif' width="180"></div>
+                <img src='images/dexterous_manipulation.gif' width="180">
+              </div>
+              <script type="text/javascript">
+                function superdeep_start() {
+                  document.getElementById('ff_image').style.opacity = "1";
+                }
 
+                function superdeep_stop() {
+                  document.getElementById('ff_image').style.opacity = "0";
+                }
+                superdeep_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              </a>
+              <br><b>Goal:</b>
+		We aim to learn robust dexterous manipulation skills for the pen reoritation or other tasks from a few pieces of demonstration data. Dexterous manipulation is known to be very complicated due to the absence of well-studied analytical model and high degrees of freedom. Most existing work addresses this via training a Reinforcement learning agent with fine-tuned shaped rewards. On the contrary, we view this problem from another perspective and we are building a framework that can learn the manipulation skills from demonstration provided by a well-trained RL agent or human demonstator in several minutes! More details are coming.</b>
+              <br 
+              <p></p>
+            </td>
+          </tr> 
+          </table>
+          
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
