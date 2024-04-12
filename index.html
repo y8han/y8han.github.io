@@ -93,7 +93,7 @@
               <br>
 		<em>Under review by RA-L</em>
               <br>
-		When humans learn physical skills (e.g., learn to play tennis), we tend to first observe and learn what an expert is doing. But this is often insufficient. Therefore, we subsequently engage in practice, where we try to emulate the expert.  Inspired by this observation, we introduce Combining IMitation and Emulation for Motion Refinement (CIMER) -- a two-stage framework to learn dexterous prehensile manipulation skills from state-only observations. CIMER's first stage involves imitation: simultaneously encode the complex interdependent motions of the robot hand and the object in a structured dynamical system. This results in a reactive motion generation policy that provides a reasonable motion prior, but lacks the ability to reason about contact effects due to the lack of action labels. The second stage involves emulation: learn a motion refinement policy to make adjustments to the motion prior of the robot hand such that the desired object motion is reenacted. CIMER is both task-agnostic (no task-specific reward design or shaping) and intervention-free (no need for additional teleoperated or labeled demonstrations).
+		When human acquire physical skills (e.g., tennis) from experts, we tend to first learn from merely observing the expert. But this is often insufficient. We then engage in practice, where we try to emulate the expert and ensure that our actions produce similar effects on our environment. Inspired by this observation, we introduce Combining IMitation and Emulation for Motion Refinement (CIMER) -- a two-stage framework to learn dexterous prehensile manipulation skills from state-only observations.  CIMER's first stage involves imitation: simultaneously encode the complex interdependent motions of the robot hand and the object in a structured dynamical system. This results in a reactive motion generation policy that provides a reasonable motion prior, but lacks the ability to reason about contact effects due to the lack of action labels. The second stage involves emulation: learn a motion refinement policy via reinforcement that adjusts the robot hand's motion prior such that the desired object motion is reenacted. CIMER is both task-agnostic (no task-specific reward design or shaping) and intervention-free (no additional teleoperated or labeled demonstrations).
               <br>
 	 [<a href="https://arxiv.org/abs/2404.05582">arXiv</a>][<a href="https://sites.google.com/view/cimer-2024/">Webpage</a>][<a href="https://github.com/GT-STAR-Lab/CIMER">Code</a>]
               <p></p>
@@ -432,39 +432,17 @@ verifying these in practice can be hard.
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
 
-              <heading>In Progress</heading>
+              <heading>The awesome students that I collaborate with</heading>
             </td>
             </tr>
         </tbody></table>
+      <p style="text-align:center"> 
+	<a href="https://colinyu1.github.io/ColinYu1.github-io/">Kelin Yu</a> (CS M.S., 2022-2024, Now PhD at UMD CS)
+      <br>
+      	<a href="https://chenzheny.github.io/">Zhenyang Chen</a> (Robotics M.S., 2023-2024, Now PhD at GT Robotics)
+      	<br>
+      	<a href="https://www.linkedin.com/in/hanyao-guo-7422ba28a/">Hanyao Guo</a> (Robotics M.S., 2024-)
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="DifferentialPBD" onmouseover="DifferentialPBD">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ff_image'>
-                  <img src='images/DiffPBD.gif' width="180"></div>
-                <img src='images/DiffPBD.gif' width="180">
-              </div>
-              <script type="text/javascript">
-                function superdeep_start() {
-                  document.getElementById('ff_image').style.opacity = "1";
-                }
-
-                function superdeep_stop() {
-                  document.getElementById('ff_image').style.opacity = "0";
-                }
-                superdeep_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              </a>
-              <br><b>Goal:</b>
-		We aim to make the PBD framework differentiable so that we can employ the same strategy as used in neural network to obtain the optimal control actions. The animation (prelimary results) shown in the left demonstrates how the control actions are improved in simulation since the selected nodes are dragged to target positions. <b>This work is now taken over by current lab members at <a href="https://www.ucsdarclab.com/">ARCLab</a>. Hope they can obtain some promising results. :></b>
-              <br 
-              <p></p>
-            </td>
-          </tr> 
-          </table>
           
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
