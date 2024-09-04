@@ -34,7 +34,7 @@
               
               <p style="text-align:center">
                 <a href="mailto:njyunhai@gmail.com">Email</a> &nbsp/&nbsp
-                <a href="CV_latest.pdf">CV(Apr 2024)</a> &nbsp/&nbsp
+                <a href="CV_latest.pdf">CV(Sep 2024)</a> &nbsp/&nbsp
                 <a href="https://github.com/y8han">Github</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=lsN3nY8AAAAJ&hl=en&authuser=1">Google Scholar</a> &nbsp/&nbsp
                 <a href="http://linkedin.com/in/Yunhai-Han">Linkdin</a> &nbsp/&nbsp
@@ -65,7 +65,8 @@
               <heading>Mentored students</heading>
               <p> <a href="https://colinyu1.github.io/ColinYu1.github-io/">Kelin Yu</a> (CS M.S., 2022-2024, Now PhD at UMD CS) <br>
               <a href="https://chenzheny.github.io/">Zhenyang Chen</a> (Robotics M.S., 2023-2024, Now PhD at GT Robotics) <br>
-              <a href="https://www.linkedin.com/in/hanyao-guo-7422ba28a/">Hanyao Guo</a> (Robotics M.S., 2024-)
+              <a href="https://www.linkedin.com/in/hanyao-guo-7422ba28a/">Hanyao Guo</a> (Robotics M.S., 2024-) <br>
+              Pratik Shah (CS M.S., 2024-)
 	      </p>
             </td>
           </tr>
@@ -80,6 +81,42 @@
             </tr>
         </tbody></table>
         <strong>&#160 &#160 &#160 2024</strong><br>
+        
+                        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="CIMER" onmouseover="MimicTouch">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/korol.png' width="180"></div>
+                <img src='images/korol.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function superdeep_start() {
+                  document.getElementById('ff_image').style.opacity = "1";
+                }
+
+                function superdeep_stop() {
+                  document.getElementById('ff_image').style.opacity = "0";
+                }
+                superdeep_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+             <papertitle>KOROL: Learning Visualizable Object Feature with Koopman Operator Rollout for Manipulation
+                </papertitle>
+              </a>
+              <br>
+	      Hongyi Chen, Abulikemu Abuduweili, Aviral Agrawal, <b>Yunhai Han</b>, Harish Ravichandar, Changliu Liu, and Jeffrey Ichnowski
+              <br>
+		<em>Accepted by CoRL 2024</em>
+              <br>
+		Learning dexterous manipulation skills presents significant challenges due to complex nonlinear dynamics that underlie the interactions between objects and multi-fingered hands. Koopman operators have emerged as a robust method for modeling such nonlinear dynamics within a linear framework. However, current methods rely on runtime access to ground-truth (GT) object states, making them unsuitable for vision-based practical applications. Unlike image-to-action policies that implicitly learn visual features for control, we use a dynamics model, specifically the Koopman operator, to learn visually interpretable object features critical for robotic manipulation within a scene. We construct a Koopman operator using object features predicted by a feature extractor and utilize it to auto-regressively advance system states. We train the feature extractor to embed scene information into object features, thereby enabling the accurate propagation of robot trajectories. We evaluate our approach on simulated and real-world robot tasks, with results showing that it outperformed the model-based imitation learning NDP by 1.08× and the image-to-action Diffusion Policy by 1.16×.
+              <br>
+	 [<a href="https://arxiv.org/abs/2407.00548">arXiv</a>]
+              <p></p>
+            </td>
+          </tr> 
+          </table>
                 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr onmouseout="CIMER" onmouseover="MimicTouch">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -115,7 +152,7 @@
             </td>
           </tr> 
           </table>
-        <strong>&#160 &#160 &#160 2023</strong><br>
+        
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr onmouseout="MimicTouch" onmouseover="MimicTouch">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -136,21 +173,22 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-             <papertitle>MimicTouch: Learning Human's Control Strategy with Multi-Modal Tactile Feedback
+             <papertitle>MimicTouch: Leveraging Multi-modal Human Tactile Demonstrations for Contact-rich Manipulation
                 </papertitle>
               </a>
               <br>
-	     Kelin Yu*, <b>Yunhai Han</b>, Matthew Zhu, and Ye Zhao (* Yu is my master student advisee)
+	     Kelin Yu*, <b>Yunhai Han*</b>, Qixian Wang, Vaibhav Saxena, Danfei Xu, and Ye Zhao (* Equal contribution; Yu is my master student advisee)
 	      <br>
-             <em><b>Best Paper</b> at NeurIPS Touch Processing Workshop & Poster at CoRL Deployable Workshop</em>, 2023
+             Accepted by CoRL 2024 & <em><b>Best Paper</b> at NeurIPS Touch Processing Workshop & Poster at CoRL Deployable Workshop</em>, 2023
               <br>
-		In this work, we introduce "MimicTouch", a novel framework that mimics human’s tactile-guided control strategy. In this framework, we initially collect multi-modal tactile datasets from human demonstrators, incorporating human tactile-guided control strategies for task completion. The subsequent step involves instructing robots through imitation learning using multi-modal sensor data and retargeted human motions. To further mitigate the embodiment gap between humans and robots, we employ online residual reinforcement learning on the physical robot. This ongoing work will pave the way for a broader spectrum of tactile-guided robotic applications. 
+		Tactile sensing is critical to fine-grained, contact-rich manipulation tasks, such as insertion and assembly. An effective strategy to learn tactile-guided policy is to train neural networks that map tactile signal to control based on teleoperated demonstration data. However, to provide the teleoperated demonstration, human users often rely on visual feedback to control the robot. This creates a gap between the sensing modality used for controlling the robot (visual) and the modality of interest (tactile). To bridge this gap, we introduce MimicTouch, a novel framework for learning policies directly from demonstrations provided by human users with their hands. The key innovations are i) a human tactile data collection system which collects multi-modal tactile dataset for learning human's tactile-guided control strategy, ii) an imitation learning-based framework for learning human's tactile-guided control strategy through such data, and iii) an online residual RL framework to bridge the embodiment gap between the human hand and the robot gripper. 
               <br>
-	 [<a href="https://arxiv.org/abs/2310.16917">arXiv</a>]
+	 [<a href="https://arxiv.org/abs/2310.16917">arXiv</a>][<a href="https://openreview.net/forum?id=7yMZAUkXa4&noteId=ahxcMFT5Z8">OpenReview</a>][<a href="https://sites.google.com/view/MimicTouch">Webpage</a>]
               <p></p>
             </td>
           </tr> 
           </table>
+          <strong>&#160 &#160 &#160 2023</strong><br>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr onmouseout="DexterousManipulation" onmouseover="DexterousManipulation">
             <td style="padding:20px;width:25%;vertical-align:middle">
