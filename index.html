@@ -82,6 +82,42 @@
         </tbody></table>
         <strong>&#160 &#160 &#160 2024</strong><br>
         
+                                                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="Spec-clip" onmouseover="Spec-clip">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/franka_plot_0904.png' width="180"></div>
+                <img src='images/franka_plot_0904.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function superdeep_start() {
+                  document.getElementById('ff_image').style.opacity = "1";
+                }
+
+                function superdeep_stop() {
+                  document.getElementById('ff_image').style.opacity = "0";
+                }
+                superdeep_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+             <papertitle>On the Surprising Effectiveness of Spectrum Clipping in Learning Stable Linear Dynamics
+                </papertitle>
+              </a>
+              <br>
+	      Hanyao Guo*, <b>Yunhai Han*</b>, Harish Ravichandar (* Equal contribution; Guo is my master student advisee)
+              <br>
+		<em>Under review by L4DC 2025</em>
+              <br>
+		When learning stable linear dynamical systems from data, three important properties are desirable: i) predictive accuracy, ii) provable stability, and iii) computational efficiency. Unconstrained minimization of reconstruction errors leads to high accuracy and efficiency but cannot guarantee stability. Existing methods to remedy this focus on enforcing stability while also ensuring accuracy, but do so only at the cost of increased computation. In this work, we investigate if a straightforward approach can simultaneously offer all three desiderata of learning stable linear systems. Specifically, we consider a post-hoc approach that manipulates the spectrum of the learned system matrix after it is learned in an unconstrained fashion. We call this approach spectrum clipping (SC) as it involves eigen decomposition and subsequent reconstruction of the system matrix after clipping all of its eigenvalues that are larger than one to one (without altering the eigenvectors). Through detailed experiments involving two different applications and publicly available benchmark datasets, we demonstrate that this simple technique can simultaneously learn highly accurate linear systems that are provably stable. Notably, we demonstrate that SC can achieve similar or better performance than strong baselines while being orders-of-magnitude faster. We also show that SC can be readily combined with Koopman operators to learn stable nonlinear dynamics, such as those underlying complex dexterous manipulation skills involving multi-fingered robotic hands.
+              <br>
+               [<a href="https://arxiv.org/abs/2412.01168">Arxiv</a>][<a href="https://github.com/GT-STAR-Lab/spec_clip">Webpage</a>]
+              <p></p>
+            </td>
+          </tr> 
+          </table>
+          
                                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr onmouseout="AsymDex" onmouseover="AsymDex">
             <td style="padding:20px;width:25%;vertical-align:middle">
