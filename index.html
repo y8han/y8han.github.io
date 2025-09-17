@@ -107,6 +107,42 @@ https://faculty.cc.gatech.edu/~zk15/">Prof. Zsolt Kira's lab</a>) <br>
         </tbody></table>
         <strong>&#160 &#160 &#160 2025</strong><br>
         
+                                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="KoopLoco" onmouseover="KoopLoco">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/kooploco.png' width="180"></div>
+                <img src='images/kooploco.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function superdeep_start() {
+                  document.getElementById('ff_image').style.opacity = "1";
+                }
+
+                function superdeep_stop() {
+                  document.getElementById('ff_image').style.opacity = "0";
+                }
+                superdeep_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+             <papertitle>Learning Koopman Dynamics for Safe Legged Locomotion with Reinforcement Learning-based Controller
+                </papertitle>
+              </a>
+              <br>
+	      Jeonghwan Kim, <b>Yunhai Han</b>, Harish Ravichandar, Sehoon Ha
+              <br>
+               <em>Under review</em>
+              <br>
+              Nonlinearity in dynamics has long been a major challenge in robotics, often causing significant performance degradation in existing control algorithms. For example, the navigation of bipedal robots can exhibit nonlinear behaviors even under simple velocity commands, as their actual dynamics are governed by complex whole-body movements and discrete contacts. In this work, we propose a novel safe navigation framework inspired by Koopman operator theory. We first train a low-level locomotion policy using deep reinforcement learning, and then capture its low-frequency, base-level dynamics by learning linearized dynamics in a high-dimensional lifted space using Dynamic Mode Decomposition. Then, our model-predictive controller (MPC) efficiently optimizes control signals via standard quadratic objective and the linear dynamics constraint in the lifted space. We demonstrate that the Koopman-based model more accurately predicts bipedal robot trajectories than baseline approaches. Furthermore, we show that the proposed navigation framework achieves improved safety with better success rates in dense environments with narrow passages.
+              <br>
+              [<a href="https://arxiv.org/abs/2409.14736">arXiv</a>]
+              <p></p>
+            </td>
+          </tr> 
+          </table>
+          
                                                 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr onmouseout="Spec-clip" onmouseover="Spec-clip">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -137,7 +173,7 @@ https://faculty.cc.gatech.edu/~zk15/">Prof. Zsolt Kira's lab</a>) <br>
               <br>
 		Learning robot manipulation from abundant human videos offers a scalable alternative to costly robot-specific data collection. However, domain gaps across visual, morphological, and physical aspects hinder direct imitation. To effectively bridge the domain gap, we propose ImMimic, an embodiment-agnostic co-training framework that leverages both human videos and a small amount of teleoperated robot demonstrations. ImMimic uses Dynamic Time Warping (DTW) with either action- or visual-based mapping to map retargeted human hand poses to robot joints, followed by MixUp interpolation between paired human and robot trajectories. Our key insights are (1) retargeted human hand trajectories provide informative action labels, and (2) interpolation over the mapped data creates intermediate domains that facilitate smooth domain adaptation during co-training. Evaluations on four real-world manipulation tasks (Pick and Place, Push, Hammer, Flip) across four robotic embodiments (Robotiq, Fin Ray, Allegro, Ability) show that ImMimic improves task success rates and execution smoothness, highlighting its efficacy to bridge the domain gap for robust robot manipulation.
               <br>
-               [<a href="https://openreview.net/pdf/71eeb1380524067a776d1c563ac1a37bf0f94f98.pdf">Paper</a>][<a href="https://sites.google.com/view/immimic">Webpage</a>]
+               [<a href="https://arxiv.org/abs/2509.10952">Arxiv</a>][<a href="https://sites.google.com/view/immimic">Webpage</a>]
               <p></p>
             </td>
           </tr> 
@@ -173,7 +209,7 @@ https://faculty.cc.gatech.edu/~zk15/">Prof. Zsolt Kira's lab</a>) <br>
               <br>
 		When learning stable linear dynamical systems from data, three important properties are desirable: i) predictive accuracy, ii) provable stability, and iii) computational efficiency. Unconstrained minimization of reconstruction errors leads to high accuracy and efficiency but cannot guarantee stability. Existing methods to remedy this focus on enforcing stability while also ensuring accuracy, but do so only at the cost of increased computation. In this work, we investigate if a straightforward approach can simultaneously offer all three desiderata of learning stable linear systems. Specifically, we consider a post-hoc approach that manipulates the spectrum of the learned system matrix after it is learned in an unconstrained fashion. We call this approach spectrum clipping (SC) as it involves eigen decomposition and subsequent reconstruction of the system matrix after clipping all of its eigenvalues that are larger than one to one (without altering the eigenvectors). Through detailed experiments involving two different applications and publicly available benchmark datasets, we demonstrate that this simple technique can simultaneously learn highly accurate linear systems that are provably stable. Notably, we demonstrate that SC can achieve similar or better performance than strong baselines while being orders-of-magnitude faster. We also show that SC can be readily combined with Koopman operators to learn stable nonlinear dynamics, such as those underlying complex dexterous manipulation skills involving multi-fingered robotic hands.
               <br>
-               [<a href="https://arxiv.org/abs/2412.01168">Arxiv</a>][<a href="https://github.com/GT-STAR-Lab/spec_clip">Webpage</a>]
+               [<a href="https://arxiv.org/abs/2412.01168">Arxiv</a>][<a href="https://github.com/GT-STAR-Lab/spec_clip">Code</a>]
               <p></p>
             </td>
           </tr> 
@@ -216,42 +252,6 @@ https://faculty.cc.gatech.edu/~zk15/">Prof. Zsolt Kira's lab</a>) <br>
           </table>
           
           <strong>&#160 &#160 &#160 2024</strong><br>
-          
-                                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="KoopLoco" onmouseover="KoopLoco">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ff_image'>
-                  <img src='images/kooploco.png' width="180"></div>
-                <img src='images/kooploco.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function superdeep_start() {
-                  document.getElementById('ff_image').style.opacity = "1";
-                }
-
-                function superdeep_stop() {
-                  document.getElementById('ff_image').style.opacity = "0";
-                }
-                superdeep_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-             <papertitle>Learning Koopman Dynamics for Safe Legged Locomotion with Reinforcement Learning-based Controller
-                </papertitle>
-              </a>
-              <br>
-	      Jeonghwan Kim, <b>Yunhai Han</b>, Harish Ravichandar, Sehoon Ha
-              <br>
-               <em>Under review</em>
-              <br>
-              Learning-based algorithms have demonstrated impressive performance in agile locomotion of legged robots. However, learned policies are often complex and opaque due to the black-box nature of learning algorithms, which hinders predictability and precludes guarantees on performance or safety. In this work, we develop a novel safe navigation framework that combines Koopman operators and model-predictive control (MPC) frameworks. Our method adopts Koopman operator theory to learn the linear evolution of dynamics of the underlying locomotion policy, which can be effectively learned with Dynamic Mode Decomposition (DMD). Given that our learned model is linear, we can readily leverage the standard MPC algorithm. Our framework is easy to implement with less prior knowledge because it does not require access to the underlying dynamical systems or control-theoretic techniques. We demonstrate that the learned linear dynamics can better predict the trajectories of legged robots than baselines. In addition, we showcase that the proposed navigation framework can achieve better safety with less collisions in challenging and dense environments with narrow passages.
-              <br>
-              [<a href="https://arxiv.org/abs/2409.14736">arXiv</a>]
-              <p></p>
-            </td>
-          </tr> 
-          </table>
           
                         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr onmouseout="CIMER" onmouseover="MimicTouch">
