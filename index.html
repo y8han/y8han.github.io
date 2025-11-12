@@ -180,8 +180,8 @@ https://faculty.cc.gatech.edu/~zk15/">Prof. Zsolt Kira's lab</a>) <br>
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='ff_image'>
-                  <img src='images/franka_plot_0904.png' width="180"></div>
-                <img src='images/franka_plot_0904.png' width="180">
+                  <img src='images/Spectal_clipping-Geometric_intution.png' width="180"></div>
+                <img src='images/Spectal_clipping-Geometric_intution.png' width="180">
               </div>
               <script type="text/javascript">
                 function superdeep_start() {
@@ -195,7 +195,7 @@ https://faculty.cc.gatech.edu/~zk15/">Prof. Zsolt Kira's lab</a>) <br>
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-             <papertitle>On the Surprising Effectiveness of Spectrum Clipping in Learning Stable Linear Dynamics
+             <papertitle>On the Surprising Effectiveness of Spectral Clipping in Learning Stable Linear and Latent-Linear Dynamical Systems
                 </papertitle>
               </a>
               <br>
@@ -203,7 +203,7 @@ https://faculty.cc.gatech.edu/~zk15/">Prof. Zsolt Kira's lab</a>) <br>
               <br>
 		<em>Under review</em>
               <br>
-		When learning stable linear dynamical systems from data, three important properties are desirable: i) predictive accuracy, ii) provable stability, and iii) computational efficiency. Unconstrained minimization of reconstruction errors leads to high accuracy and efficiency but cannot guarantee stability. Existing methods to remedy this focus on enforcing stability while also ensuring accuracy, but do so only at the cost of increased computation. In this work, we investigate if a straightforward approach can simultaneously offer all three desiderata of learning stable linear systems. Specifically, we consider a post-hoc approach that manipulates the spectrum of the learned system matrix after it is learned in an unconstrained fashion. We call this approach spectrum clipping (SC) as it involves eigen decomposition and subsequent reconstruction of the system matrix after clipping all of its eigenvalues that are larger than one to one (without altering the eigenvectors). Through detailed experiments involving two different applications and publicly available benchmark datasets, we demonstrate that this simple technique can simultaneously learn highly accurate linear systems that are provably stable. Notably, we demonstrate that SC can achieve similar or better performance than strong baselines while being orders-of-magnitude faster. We also show that SC can be readily combined with Koopman operators to learn stable nonlinear dynamics, such as those underlying complex dexterous manipulation skills involving multi-fingered robotic hands.
+		When learning stable linear dynamical systems from data, three important properties are desirable: i) predictive accuracy, ii) verifiable stability, and iii) computational efficiency. Unconstrained minimization of prediction errors leads to high accuracy and efficiency but cannot guarantee stability. Existing methods to enforce stability often preserve accuracy, but do so only at the cost of increased computation. In this work, we investigate if a seemingly-naive procedure can simultaneously offer all three desiderata. Specifically, we consider a post-hoc procedure in which we surgically manipulate the spectrum of the linear system after it was learned using unconstrained least squares. We call this approach spectral clipping (SC) as it involves eigen decomposition and subsequent reconstruction of the system matrix after any eigenvalues whose magnitude exceeds one have been clipped to one (without altering the eigenvectors). We also show that SC can be readily combined with Koopman operators to learn nonlinear dynamical systems that can generate stable predictions of nonlinear phenomena, such as those underlying complex dexterous manipulation skills involving multi-fingered robotic hands. Through comprehensive experiments involving two different applications and publicly available benchmark datasets, we show that this simple technique can efficiently learn highly-accurate predictive dynamics that are provably-stable. Notably, we find that SC can match or outperform strong baselines while being orders-of-magnitude faster. Finally, we find that SC can learn stable robot policies even when the training data includes unsuccessful or truncated demonstrations.
               <br>
                [<a href="https://arxiv.org/abs/2412.01168">Arxiv</a>][<a href="https://github.com/GT-STAR-Lab/spec_clip">Code</a>]
               <p></p>
