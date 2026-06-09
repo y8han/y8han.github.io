@@ -130,6 +130,7 @@
           </tr>
         </tbody></table>
         
+        
          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -138,7 +139,79 @@
             </tr>
         </tbody></table>
         <strong>&#160 &#160 &#160 2026</strong><br>
-       
+     
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="vid2sim2real" onmouseover="vid2sim2real">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/vid2sim2real.png' width="180"></div>
+                <img src='images/vid2sim2real.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function superdeep_start() {
+                  document.getElementById('ff_image').style.opacity = "1";
+                }
+
+                function superdeep_stop() {
+                  document.getElementById('ff_image').style.opacity = "0";
+                }
+                superdeep_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+             <papertitle>Video2Sim2Real: Full-Stack Autonomous Dexterous Acquisition from a Single Human Video
+                </papertitle>
+              </a>
+              <br>
+              <b>Yunhai Han</b>*, Jianuo Qiu*, Linhao Bai†, Ziyu Xiao†, Zihang Zeng†, Yangcen Liu‡, Zhaodong Yang‡, Shalin Jain‡, Wenrui Ma, Jiaqi Fu, Yuqian Zheng, Manisha Natarajan, Muhammad Zubair Irshad, Kenneth Shaw, Matthew Gombolay, Zsolt Kira§, Harish Ravichandar§ (∗Equal first authors. †Equal second authors. ‡Equal third authors. §Equal advising)
+              <br>
+               <em>Under review</em>
+              <br>
+              Human manipulation videos provide an intuitive source for robot learning, but transferring human dexterity to robots remains difficult due to perception errors and embodiment gaps. We introduce Video2Sim2Real, a full-stack framework that <b>autonomously</b> acquires dexterous skills from a single human manipulation video. The framework reconstructs a simulator-ready digital twin, extracts robot and object motion priors, and refines robot behavior using object-centric keyframes and optimized robot configurations. To bridge the sim-to-real gap, Video2Sim2Real decouples robustness to noisy perception from adaptation to hand-object dynamics: imitation learning recalibrates robot configurations from real-world point clouds, while residual RL performs local finger-level refinements. A collision-aware motion planning module further enables generalization to novel object configurations. Across everyday manipulation tasks, Video2Sim2Real improves simulated success, safety, and trajectory coherence, and achieves stronger real-world transfer than existing baselines.
+              <br>
+              [<a href="https://video2sim2real.github.io/">Website</a>][<a href="https://arxiv.org/abs/2606.08828">arXiv</a>]
+              <p></p>
+            </td>
+          </tr> 
+          </table>
+          
+               <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="OmniTacTune" onmouseover="OmniTacTune">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/OmniTacTune_teaser.png' width="180"></div>
+                <img src='images/OmniTacTune_teaser.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function superdeep_start() {
+                  document.getElementById('ff_image').style.opacity = "1";
+                }
+
+                function superdeep_stop() {
+                  document.getElementById('ff_image').style.opacity = "0";
+                }
+                superdeep_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+             <papertitle>OmniTacTune: Policy-Agnostic Real-World RL for Tactile Residual Adaptation of Visual Policies
+                </papertitle>
+              </a>
+              <br>
+              Kelin Yu*, Haode Zhang*, Harish Ravichandar, <b>Yunhai Han</b>, Ruohan Gao (* Equal contribution)
+              <br>
+               <em>Under review</em>
+              <br>
+              Visual policies learned from human videos, teleoperation, and robot demonstrations offer scalable motion priors, but often fail in contact-rich manipulation, where success significantly depends on local force and contact geometry. Tactile sensing provides these complementary signals, yet tactile data remain costly to collect and hard to generalize across sensors, robots, and tasks. We introduce OmniTacTune, a policy-agnostic real-world RL pipeline that adapts tactile feedback to pretrained visual policies through residual correction. OmniTacTune uses a two-stage design: it first bootstraps tactile-aware learning from autonomous base-policy rollouts, then learns a lightweight tactile residual policy through online interaction. Extensive experiments show that OmniTacTune generalizes across diverse contact-rich tasks, visual base policies, and tactile representations. Across four real-world contact-rich tasks, it improves visual base policies from 5–40% success to 85–100% within 40–80 minutes, demonstrating an efficient path for adapting tactile feedback to scalable visual robot policies.
+              <br>
+              [<a href="https://colinyu1.github.io/omnitactune-site/">Website</a>]
+              <p></p>
+            </td>
+          </tr> 
+          </table>
+          
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr onmouseout="KUBM" onmouseover="KUBM">
             <td style="padding:20px;width:25%;vertical-align:middle">
