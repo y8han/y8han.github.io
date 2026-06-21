@@ -316,6 +316,34 @@ h4 {
   line-height: 1.5;
 }
 
+.research-vision {
+  grid-column: 1 / -1;
+  justify-self: stretch;
+  align-self: stretch;
+  width: 100%;
+  margin: 0;
+  border: 1px solid rgba(214, 154, 23, 0.38);
+  border-left: 4px solid var(--gold);
+  border-radius: var(--radius);
+  background: #fff8e8;
+  padding: 1rem 1.1rem;
+  color: #24333c;
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.5;
+  box-shadow: 0 12px 28px rgba(16, 24, 32, 0.05);
+}
+
+.research-vision p {
+  max-width: none;
+  margin: 0;
+}
+
+.research-vision strong {
+  color: var(--accent-dark);
+  font-weight: 900;
+}
+
 .personal-background {
   max-width: 720px;
   margin: 1rem 0 0;
@@ -767,6 +795,15 @@ h4 {
   color: #31424b;
   font-size: 1rem;
   line-height: 1.5;
+}
+
+.authors strong {
+  display: inline-block;
+  border-radius: 0.32rem;
+  background: #fff3d0;
+  padding: 0 0.22rem;
+  color: #7c5200;
+  font-weight: 900;
 }
 
 .authors a {
