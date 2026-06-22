@@ -388,13 +388,11 @@ h4 {
 
 .robot-video-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 1rem;
 }
 
 .robot-video-card {
   display: grid;
-  grid-column: span 2;
   gap: 0.9rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -404,11 +402,11 @@ h4 {
 }
 
 .robot-video-card-feature {
-  grid-column: span 3;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
 }
 
 .robot-task-suite {
-  grid-column: 1 / -1;
   gap: 1.1rem;
 }
 
@@ -985,6 +983,10 @@ h4 {
   .robot-video-card-feature,
   .robot-task-suite {
     grid-column: auto;
+  }
+
+  .robot-video-card-feature {
+    grid-template-columns: 1fr;
   }
 
   .robot-task-videos {
