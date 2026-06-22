@@ -339,6 +339,14 @@ h4 {
   margin: 0;
 }
 
+.research-vision-note {
+  margin-top: 0.65rem;
+  border-top: 1px solid rgba(214, 154, 23, 0.28);
+  padding-top: 0.7rem;
+  font-style: italic;
+  font-weight: 650;
+}
+
 .research-vision strong {
   color: var(--accent-dark);
   font-weight: 900;
