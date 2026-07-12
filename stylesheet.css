@@ -414,6 +414,11 @@ h4 {
   gap: 0.8rem;
 }
 
+.robot-video-demo {
+  display: grid;
+  gap: 0.8rem;
+}
+
 .robot-task-suite {
   gap: 1.1rem;
 }

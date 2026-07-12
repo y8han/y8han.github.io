@@ -133,6 +133,12 @@
           <video controls muted playsinline preload="metadata" poster="images/thumbs/robot-koopman.jpg" aria-label="Koopman behavioral model robot manipulation video">
             <source src="robot_videos/Koopman_model.mp4" type="video/mp4">
           </video>
+          <div class="robot-video-demo">
+            <p>To handle unanticipated disturbances, the robot policy uses the behavioral dynamics model to enable <em>event-triggered replanning</em>. By explicitly predicting the future flow of visual features&mdash;that is, how the object is expected to move&mdash;the model continuously compares predicted motion with observed motion at runtime. When this discrepancy exceeds a threshold, the policy generates a new, coherent robot action trajectory. In this way, the behavioral dynamics model captures the coupled evolution of the robot and the object, enabling both coherent execution and immediate reactivity without relying on a hard-coded action chunk size.</p>
+            <video controls muted playsinline preload="metadata" aria-label="K-UBM event-triggered replanning during a flower manipulation task">
+              <source src="robot_videos/flower_replanning.mp4" type="video/mp4">
+            </video>
+          </div>
         </article>
 
         <article class="robot-video-card robot-video-card-feature">
@@ -217,7 +223,7 @@
               <span class="selected-year">2026</span>
               <span class="selected-status">Under review</span>
             </div>
-            <h3>Going with the Flow: Koopman Behavioral Models as Implicit Planners for Visuo-Motor Dexterity</h3>
+            <h3>Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity</h3>
             <p>Learns dexterous behavior as coupled visual and action flows, using a structured Koopman model for temporally coherent visuo-motor planning.</p>
             <div class="paper-links">
               <a href="https://k-ubm.github.io/">Website</a>
@@ -389,7 +395,7 @@
             <img src="images/thumbs/Unified_Behavioral_Models.png" alt="Koopman behavioral model overview" loading="eager" decoding="async">
           </a>
           <div class="publication-content">
-            <h4>Going with the Flow: Koopman Behavioral Models as Implicit Planners for Visuo-Motor Dexterity</h4>
+            <h4>Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity</h4>
             <p class="authors"><strong>Yunhai Han</strong>, <a href="https://www.linkedin.com/in/jiaqi-fu-181b59283/">Jiaqi Fu</a>*, <a href="https://www.linkedin.com/in/linhaobai/">Linhao Bai</a>*, <a href="https://www.linkedin.com/in/ziyu-xiao-2a25a828a/">Ziyu Xiao</a>*, <a href="https://star-lab.cc.gatech.edu/team/zhaodong-yang/">Zhaodong Yang</a>*, <a href="https://yogita-choudhary.github.io/">Yogita Choudhary</a>, <a href="https://scholar.google.com/scholar?q=%22Krishna+Jha%22+robotics">Krishna Jha</a>, <a href="https://kczttm.github.io/">Chuizheng Kong</a>, <a href="https://www.shreyaskousik.com/">Shreyas Kousik</a>, <a href="https://harishravichandar.com/">Harish Ravichandar</a></p>
             <p class="venue">Under review</p>
             <p>Frames dexterous skills as coupled dynamical systems over visual and proprioceptive flows, enabling temporally coherent visuo-motor behavior through a structured Koopman representation.</p>
