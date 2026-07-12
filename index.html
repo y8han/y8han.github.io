@@ -134,7 +134,7 @@
             <source src="robot_videos/Koopman_model.mp4" type="video/mp4">
           </video>
           <div class="robot-video-demo">
-            <p>To handle unanticipated disturbances, the robot policy uses the behavioral dynamics model to enable <em>event-triggered replanning</em>. By explicitly predicting the future flow of visual features&mdash;that is, how the object is expected to move&mdash;the model continuously compares predicted motion with observed motion at runtime. When this discrepancy exceeds a threshold, the policy generates a new, coherent robot action trajectory. In this way, the behavioral dynamics model captures the coupled evolution of the robot and the object, enabling both coherent execution and immediate reactivity without relying on a hard-coded action chunk size.</p>
+            <p class="replanning-copy">For unanticipated disturbances, the behavioral dynamics model enables <strong><em>event-triggered replanning</em></strong>. It compares predicted and observed visual flow, generating a new, coherent action trajectory only when their discrepancy exceeds a threshold&mdash;balancing smooth execution with immediate reactivity, without tuning action chunks or collecting failure-recovery demonstrations.</p>
             <video controls muted playsinline preload="metadata" aria-label="K-UBM event-triggered replanning during a flower manipulation task">
               <source src="robot_videos/flower_replanning.mp4" type="video/mp4">
             </video>
@@ -208,8 +208,8 @@
             <h3>Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video</h3>
             <p>Autonomously reconstructs a digital twin from one human video, refines dexterous behavior in simulation, and transfers the skill to real robots.</p>
             <div class="paper-links">
-              <a href="https://video2sim2real.github.io/">Website</a>
               <a href="https://arxiv.org/abs/2606.08828">arXiv</a>
+              <a href="https://video2sim2real.github.io/">Website</a>
             </div>
           </div>
         </article>
@@ -226,8 +226,8 @@
             <h3>Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity</h3>
             <p>Learns dexterous behavior as coupled visual and action flows, using a structured Koopman model for temporally coherent visuo-motor planning.</p>
             <div class="paper-links">
+              <a href="https://arxiv.org/abs/2602.07413">arXiv</a>
               <a href="https://k-ubm.github.io/">Website</a>
-              <a href="https://arxiv.org/pdf/2602.07413">arXiv</a>
             </div>
           </div>
         </article>
@@ -244,8 +244,8 @@
             <h3>OmniTacTune: Policy-Agnostic Real-World RL for Tactile Residual Adaptation of Visual Policies</h3>
             <p>Adapts tactile feedback to pretrained visual policies through real-world residual RL for contact-rich manipulation.</p>
             <div class="paper-links">
+              <a href="https://arxiv.org/abs/2607.03723">arXiv</a>
               <a href="https://colinyu1.github.io/omnitactune-site/">Website</a>
-              <a href="https://arxiv.org/pdf/2607.03723">arXiv</a>
             </div>
           </div>
         </article>
@@ -264,7 +264,7 @@
             <p>Bridges human-to-robot imitation with retargeted human videos, robot demonstrations, and interpolation across embodiments.</p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2509.10952">arXiv</a>
-              <a href="https://sites.google.com/view/immimic">Webpage</a>
+              <a href="https://sites.google.com/view/immimic">Website</a>
               <a href="https://github.com/GaTech-RL2/ImMimic-CoRL2025">Code</a>
             </div>
           </div>
@@ -283,7 +283,7 @@
             <p>Combines imitation and emulation to learn dexterous prehensile manipulation from state-only observations.</p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2404.05582">arXiv</a>
-              <a href="https://sites.google.com/view/cimer-2024/">Webpage</a>
+              <a href="https://sites.google.com/view/cimer-2024/">Website</a>
               <a href="https://github.com/GT-STAR-Lab/CIMER">Code</a>
             </div>
           </div>
@@ -303,8 +303,8 @@
             <p>Transfers tactile-guided human manipulation strategies to robot grippers with imitation and online residual reinforcement learning.</p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2310.16917">arXiv</a>
+              <a href="https://sites.google.com/view/MimicTouch">Website</a>
               <a href="https://openreview.net/forum?id=7yMZAUkXa4&amp;noteId=ahxcMFT5Z8">OpenReview</a>
-              <a href="https://sites.google.com/view/MimicTouch">Webpage</a>
             </div>
           </div>
         </article>
@@ -322,9 +322,9 @@
             <p>Shows that Koopman operator-based imitation learning can train dexterous manipulation skills efficiently, quickly, and with interpretable structure.</p>
             <div class="paper-links">
               <a href="http://arxiv.org/abs/2303.13446">arXiv</a>
-              <a href="https://openreview.net/forum?id=pw-OTIYrGa">OpenReview</a>
-              <a href="https://sites.google.com/view/kodex-corl">Webpage</a>
+              <a href="https://sites.google.com/view/kodex-corl">Website</a>
               <a href="https://github.com/GT-STAR-Lab/KODex">Code</a>
+              <a href="https://openreview.net/forum?id=pw-OTIYrGa">OpenReview</a>
             </div>
           </div>
         </article>
@@ -368,8 +368,8 @@
             <p class="venue">Under review</p>
             <p>Introduces a full-stack framework that reconstructs simulator-ready digital twins from a single human video, extracts priors for robot and object motion, refines behavior in simulation, and transfers dexterous skills to real robots.</p>
             <div class="paper-links">
-              <a href="https://video2sim2real.github.io/">Website</a>
               <a href="https://arxiv.org/abs/2606.08828">arXiv</a>
+              <a href="https://video2sim2real.github.io/">Website</a>
             </div>
           </div>
         </article>
@@ -384,8 +384,8 @@
             <p class="venue">Under review</p>
             <p>Adapts tactile feedback to pretrained visual policies through a policy-agnostic residual RL pipeline, improving real-world contact-rich manipulation across tasks, policies, and tactile representations.</p>
             <div class="paper-links">
+              <a href="https://arxiv.org/abs/2607.03723">arXiv</a>
               <a href="https://colinyu1.github.io/omnitactune-site/">Website</a>
-              <a href="https://arxiv.org/pdf/2607.03723">arXiv</a>
             </div>
           </div>
         </article>
@@ -400,8 +400,8 @@
             <p class="venue">Under review</p>
             <p>Frames dexterous skills as coupled dynamical systems over visual and proprioceptive flows, enabling temporally coherent visuo-motor behavior through a structured Koopman representation.</p>
             <div class="paper-links">
+              <a href="https://arxiv.org/abs/2602.07413">arXiv</a>
               <a href="https://k-ubm.github.io/">Website</a>
-              <a href="https://arxiv.org/pdf/2602.07413">arXiv</a>
             </div>
           </div>
         </article>
@@ -417,7 +417,7 @@
             <p>Builds a safe navigation framework for bipedal robots by learning linearized base-level dynamics in a lifted Koopman space and using the model inside MPC.</p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2409.14736">arXiv</a>
-              <a href="https://kooploco.github.io/">Webpage</a>
+              <a href="https://kooploco.github.io/">Website</a>
             </div>
           </div>
         </article>
@@ -437,7 +437,7 @@
             <p>Bridges human-to-robot imitation by combining retargeted human hand trajectories, robot demonstrations, and MixUp interpolation for embodiment-agnostic co-training.</p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2509.10952">arXiv</a>
-              <a href="https://sites.google.com/view/immimic">Webpage</a>
+              <a href="https://sites.google.com/view/immimic">Website</a>
               <a href="https://github.com/GaTech-RL2/ImMimic-CoRL2025">Code</a>
             </div>
           </div>
@@ -469,8 +469,8 @@
             <p class="venue">Spotlight at RSS Whole-body Control and Bimanual Manipulation Workshop 2025; Poster at CoRL Workshop 2024</p>
             <p>Learns asymmetric bimanual dexterity by assigning complementary hand roles and operating over relative observation and action spaces for coordinated manipulation.</p>
             <div class="paper-links">
+              <a href="https://sites.google.com/view/asymdex-2024/">Website</a>
               <a href="https://openreview.net/forum?id=g3vjZtYfMb">OpenReview</a>
-              <a href="https://sites.google.com/view/asymdex-2024/">Webpage</a>
             </div>
           </div>
         </article>
@@ -490,8 +490,8 @@
             <p>Learns visually interpretable object features and advances them with a Koopman operator, improving manipulation from visual observations without runtime ground-truth object states.</p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2407.00548">arXiv</a>
-              <a href="https://openreview.net/forum?id=A6ikGJRaKL&amp;noteId=5JYQQNrhkp">OpenReview</a>
               <a href="https://github.com/hychen-naza/KOROL">Code</a>
+              <a href="https://openreview.net/forum?id=A6ikGJRaKL&amp;noteId=5JYQQNrhkp">OpenReview</a>
             </div>
           </div>
         </article>
@@ -507,7 +507,7 @@
             <p>Combines imitation and emulation to learn dexterous prehensile manipulation from state-only observations, then refines the learned motion prior through reinforcement learning.</p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2404.05582">arXiv</a>
-              <a href="https://sites.google.com/view/cimer-2024/">Webpage</a>
+              <a href="https://sites.google.com/view/cimer-2024/">Website</a>
               <a href="https://github.com/GT-STAR-Lab/CIMER">Code</a>
             </div>
           </div>
@@ -524,8 +524,8 @@
             <p>Collects multimodal human tactile demonstrations and uses imitation plus online residual RL to transfer tactile-guided strategies to robot grippers.</p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2310.16917">arXiv</a>
+              <a href="https://sites.google.com/view/MimicTouch">Website</a>
               <a href="https://openreview.net/forum?id=7yMZAUkXa4&amp;noteId=ahxcMFT5Z8">OpenReview</a>
-              <a href="https://sites.google.com/view/MimicTouch">Webpage</a>
             </div>
           </div>
         </article>
@@ -545,9 +545,9 @@
             <p>Shows that Koopman operator-based imitation learning can train dexterous manipulation skills efficiently, quickly, and with interpretable structure.</p>
             <div class="paper-links">
               <a href="http://arxiv.org/abs/2303.13446">arXiv</a>
-              <a href="https://openreview.net/forum?id=pw-OTIYrGa">OpenReview</a>
-              <a href="https://sites.google.com/view/kodex-corl">Webpage</a>
+              <a href="https://sites.google.com/view/kodex-corl">Website</a>
               <a href="https://github.com/GT-STAR-Lab/KODex">Code</a>
+              <a href="https://openreview.net/forum?id=pw-OTIYrGa">OpenReview</a>
             </div>
           </div>
         </article>
@@ -618,7 +618,7 @@
             <p>Uses visual and GelSight tactile feedback with a Transformer model to predict safe grasping actions for deformable objects.</p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2112.06374">arXiv</a>
-              <a href="https://github.com/GTLIDAR/DeformableObjectsGrasping">Webpage</a>
+              <a href="https://github.com/GTLIDAR/DeformableObjectsGrasping">Code</a>
               <a href="https://www.youtube.com/watch?v=W7o8DsTivTk">Video</a>
             </div>
           </div>

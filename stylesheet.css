@@ -419,6 +419,10 @@ h4 {
   gap: 0.8rem;
 }
 
+.robot-video-card .replanning-copy strong {
+  color: var(--accent-warm);
+}
+
 .robot-task-suite {
   gap: 1.1rem;
 }
