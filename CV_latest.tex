@@ -1,0 +1,253 @@
+%-----------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-----------------------------------------------------------------------------------
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.55in,top=0.7in,right=0.65in,bottom=0.65in]{geometry} % Document margins
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{etoolbox}
+
+\usepackage{hyperref}
+\hypersetup{
+    anchorcolor=blue,  
+    filecolor=black,
+    urlcolor=black,
+}
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\renewcommand{\baselinestretch}{1}
+\renewcommand\labelitemi{\large $\bullet$}
+\name{Yunhai Han} % Your name
+\address{(858)214-4416 \\ yhan389@gatech.edu \\  \href{https://y8han.github.io}{https://y8han.github.io}} 
+
+
+\begin{document}
+
+
+%-----------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-----------------------------------------------------------------------------------
+\begin{rSection}{Education background}
+\begin{rSubsection}{Georgia Institute of Technology}{05/2022 - present}{Ph.D. in Robotics}
+\item \textbf{Advisor:} Harish Ravichandar
+\item Advanced to Ph.D. candidacy in April 2026. Committee: Zsolt Kira, Danfei Xu, Yunzhu Li, and Dinesh Jayaraman.
+\end{rSubsection}
+% \begin{rSubsection}{University of California, San Diego (UCSD)}{09/2019 - 06/2021}{M.S. in Dynamics \& Controls, Mechanical and Aerospace Engineering}{GPA: 3.846/4.00}
+\begin{rSubsection}{University of California, San Diego (UCSD)}{09/2019 - 06/2021}{M.S. in Mechanical Engineering}{GPA: 3.846/4.00}
+\item \textbf{Relevant Course:} Robotics
+% \item \textbf{Thesis \& publication:}     \href{https://ieeexplore.ieee.org/document/9637498}{A Numerical Verification Framework for Differential Privacy in Estimation} \qquad
+\end{rSubsection}
+% \begin{rSubsection}{Yanshan University}{09/2015 - 07/2019}{B.S. in Mechatronics, Mechanical Engineering}{GPA: 3.761/4.5, Major GPA: 3.804/4.5}
+\begin{rSubsection}{Yanshan University}{09/2015 - 07/2019}{B.S. in Mechanical Engineering}{GPA: 3.761/4.5, Major GPA: 3.804/4.5}
+\item \textbf{Relevant Course:} Mechatronics \qquad \qquad \qquad \qquad \qquad \qquad \qquad \textit{\large Ranking:} $2^{nd}$ of 594 (First six semesters)
+% \item \textbf{Thesis (in Chinese):}     \href{https://y8han.github.io/doc/automatic_tracking.pdf}{Automatically tracking system using monocular vision algorithm PnP} \qquad
+\end{rSubsection}
+\end{rSection}
+\begin{rSection}{Research Interests}
+Structured robot learning, learning dexterous skills from human videos, robot behavior models, tactile adaptation, dynamical systems for manipulation
+\end{rSection}
+
+%	PUBLICATION
+%----------------------------------------------------------------------------------- 
+\begin{rSection}{Publications}
+\begin{itemize}
+    \item \textbf{Han. Y}$^*$, Qiu. J$^*$, Bai. L, Xiao. Z, Zeng. Z, Liu. Y, Yang. Z, Jain. S, Ma. W, Fu. J, Zheng. Y, Natarajan. M, Irshad. M. Z, Shaw. K, Gombolay. M, Kira. Z, Ravichandar. H, ``Video2Sim2Real: Full-Stack Autonomous Dexterous Skill Acquisition from a Single Human Video'' ($^*$ Equal Contribution), \href{https://arxiv.org/abs/2606.08828}{Under Review}
+    \item Yu. K$^*$, Zhang. H$^*$, Ravichandar. H, \textbf{Han. Y}, Gao. R, ``OmniTacTune: Policy-Agnostic Real-World RL for Tactile Residual Adaptation of Visual Policies'' ($^*$ Equal Contribution), \href{https://arxiv.org/abs/2607.03723}{Best Paper Award at RSS Tac for FM Workshop 2026}
+    \item \textbf{Han. Y}, Fu. J$^*$, Bai. L$^*$, Xiao. Z$^*$, Yang. Z$^*$, Choudhary. Y, Jha. K, Kong. C, Kousik. S, Ravichandar. H, ``Going with the Flow: Koopman Behavioral Models as Pseudo Planners for Visuo-Motor Dexterity'' ($^*$ Equal Contribution among co-second authors), \href{https://arxiv.org/abs/2602.07413}{Under Review}
+    \item Kim. J, \textbf{Han. Y}, Ravichandar. H, Ha. S, ``Safe Navigation of Bipedal Robots via Koopman Operator-Based Model Predictive Control'', \href{https://arxiv.org/abs/2409.14736}{IROS 2026}
+    \item Liu. Y$^*$, Shin. W$^*$, \textbf{Han. Y}, Chen. Z, Ravichandar. H, Xu. D, ``ImMimic: Cross-Domain Imitation from Human Videos via Mapping and Interpolation'' ($^*$ Equal Contribution), \href{https://arxiv.org/abs/2509.10952}{CoRL 2025 Oral; RSS Dex Workshop Spotlight}
+    \item Guo. H$^*$, \textbf{Han. Y}$^*$, Ravichandar. H, ``On the Surprising Effectiveness of Spectral Clipping in Learning Stable Linear and Latent-Linear Dynamical Systems'' ($^*$ Equal Contribution; Guo is my master student advisee), \href{https://arxiv.org/abs/2412.01168}{Under Review}
+    \item Yang. Z, \textbf{Han. Y}, Ravichandar. H, ``AsymDex: Leveraging Asymmetry and Relative Motion in Learning Bimanual Dexterity'', \href{https://openreview.net/forum?id=g3vjZtYfMb}{Spotlight at RSS Whole-body Control and Bimanual Manipulation Workshop 2025; Poster at CoRL Workshop 2024}
+    \item Chen. H, Abuduweili. A$^*$, Agrawal. A$^*$, \textbf{Han. Y}$^*$, Ravichandar. H, Liu. C, Ichnowski. J, ``KOROL: Learning Visualizable Object Feature with Koopman Operator Rollout for Manipulation'' ($^*$ Equal Contribution), \href{https://arxiv.org/abs/2407.00548}{CoRL 2024}
+    \item \textbf{Han. Y}, Chen. Z, Williams. K. A, Ravichandar. H, ``Learning Prehensile Dexterity by Imitating and Emulating State-only Observations'', \href{https://arxiv.org/abs/2404.05582}{IEEE Robotics and Automation Letters}
+    \item Yu. K$^*$, \textbf{Han. Y}$^*$, Wang. Q, Saxena. V, Xu. D, Zhao. Y, ``MimicTouch: Leveraging Multi-modal Human Tactile Demonstrations for Contact-rich Manipulation'' ($^*$ Equal Contribution; Yu is my master student advisee), \href{https://arxiv.org/abs/2310.16917}{CoRL 2024; Best Paper Award at NeurIPS Touch Processing Workshop}
+    \item \textbf{Han. Y}, Xie. M, Zhao. Y, Ravichandar. H, ``On the Utility of Koopman Operator Theory in Learning Dexterous Manipulation Skills'', \href{http://arxiv.org/abs/2303.13446}{CoRL 2023 Oral}
+    \item M. E. Cao, J. Warnke, \textbf{Han. Y}, Ni. X, Zhao. Y, Coogan. S, ``Leveraging Heterogeneous Capabilities in Multi-Agent Systems for Environmental Conflict Resolution'', \href{https://arxiv.org/abs/2206.01833}{SSRR 2022}
+    \item \textbf{Han. Y} and Martinez. S, ``A Numerical Verification Framework for Differential Privacy in Estimation'', \href{https://arxiv.org/abs/2108.12094}{L-CSS \& ACC 2022}
+    \item Christensen. H. I, Paz. D, Zhang. H, Meyer. D, Xiang. H, \textbf{Han. Y}, Liu. Y, Liang. A, Zhong. Z, Tang. S, ``Autonomous Vehicles for Micro-Mobility'', \href{https://link.springer.com/article/10.1007/s43684-021-00010-2}{Autonomous Intelligent Systems 2021}
+    \item \textbf{Han. Y}$^*$, Yu. K$^*$, Batra. R, Boyd. N, Mehta. C, Zhao. T, She. Y, Hutchinson. S, Zhao. Y, ``Learning Generalizable Vision-Tactile Robotic Grasping Strategy for Deformable Objects via Transformer'', \href{https://arxiv.org/abs/2112.06374}{IEEE/ASME Transactions on Mechatronics}
+    \item Liu. F$^*$, Li. Z$^*$, \textbf{Han. Y}, Lu. J, Richter. F, Yip. M. C, ``\textit{Real-to-Sim} Registration of Deformable Soft Tissue with Position-Based Dynamics for Surgical Robot Autonomy'', \href{https://arxiv.org/abs/2011.00800}{ICRA 2021}
+    \item \textbf{Han. Y}$^*$, Liu. Y$^*$, Paz. D, Christensen. H. I, ``Auto-calibration Method Using Stop Signs for Urban Autonomous Driving Applications'', \href{https://arxiv.org/abs/2010.07441}{ICRA 2021}
+    \item \textbf{Han. Y}, Liu. F, Yip. M. C, ``A 2D Surgical Simulation Framework for Tool-Tissue Interaction'', \href{https://arxiv.org/abs/2010.13936}{IROS 2020 Workshop Spotlight}
+\end{itemize}
+\end{rSection}
+
+% \newpage
+% % Research Projects
+% \begin{rSection}{RESEARCH PROJECTS}
+% \large \textbf{Auto-calibration Method for Urban Autonomous Driving Applications}
+% \begin{itemize}
+% \vspace{-0.15cm}
+% \item[-] Present a system for dynamic camera calibration based on recognition of stop signs
+% \vspace{-0.15cm}
+% \item[-] Track camera intrinsic parameters with clear convergences to stable values
+% \vspace{-0.15cm}
+% \item[-] Published a paper at \textbf{ICRA 2021} as first-author
+% \vspace{-0.15cm}
+% \item[-] Describe the system in a journal paper accepted by \textbf{Autonomous Intelligent Systems (AIS), Springer}
+% \end{itemize}
+% \large \textbf{Surgical Simulation Framework for Tool-Tissue Interaction}
+% \begin{itemize}
+% \vspace{-0.15cm}
+% \item[-] Propose a framework that continuously tracks the motion of tool and simulates the soft tissue deformation under the tool-tissue interactions
+% \vspace{-0.15cm}
+% \item[-] Compute the implicit Euler energy for the future control and planning task
+% \vspace{-0.15cm}
+% \item[-] Published a paper at \textbf{IROS Workshop (Cognitive Robotic Surgery)} as first-author and gave a spotlight presentation
+% \end{itemize}
+% \large \textbf{\textit{Real-to-Sim} Registration of Deformable Soft Tissue with Position-Based Dynamics}
+% \begin{itemize}
+% \vspace{-0.15cm}
+% \item[-] Propose an online, continuous, registration method to bridge from 3D visual perception to position-based dynamics modeling of soft tissues
+% \vspace{-0.15cm}
+% \item[-] Account for differences between the simulation and the real, live surgical scenes
+% \vspace{-0.15cm}
+% \item[-] Published a paper at \textbf{ICRA 2021} as third-author
+% \end{itemize}
+% \large \textbf{Differentiable Position-based dynamics framework for manipulating soft tissues}
+% \begin{itemize}
+% \vspace{-0.15cm}
+% \item[-] Design a backpropagation algorithm for the inverse control task in PBD framework, which is inspired by the methods used in Neural network
+% \vspace{-0.15cm}
+% \item[-] Compute the optimal control actions to manipulate the soft tissues so that it can be deformed into a target shape
+% % \vspace{-0.15cm}
+% % \item[-] Published a paper at \textbf{ICRA 2021} as third-author
+% \end{itemize}
+% \large \textbf{Numerical Verification Framework for Differential Privacy in Estimation}
+% \begin{itemize}
+% \vspace{-0.15cm}
+% \item[-] Design a differential privacy test framework for distributional sensing systems using numerical verification method 
+% \vspace{-0.15cm}
+% \item[-] Capable of being easily extended to various estimators for verifying the claimed differential privacy
+% \vspace{-0.15cm}
+% \item[-] Wrap up the algorithms, theoretical \& simulation results in \textbf{Master's Thesis}
+% \vspace{-0.15cm}
+% \item[-]Published a paper at \textbf{L-CSS with ACC option} as first-author
+% \end{itemize}
+% \large \textbf{Learning Generalizable Tactile-based Robot Grasping Strategy for Deformable Objects via Transformer}
+% \begin{itemize}
+% \vspace{-0.15cm}
+% \item[-] Propose a Transformer-based robot grasping framework for rigid grippers that leverage tactile information from a GelSight sensor for safe object grasping
+% \vspace{-0.15cm}
+% \item[-] Learn physical feature embeddings from visual \& tactile feedback and predict a final grasp through a multilayer perceptron (MLP) under the given grasping strength
+% \vspace{-0.15cm}
+% \item[-] Command an optimal grasping strength to the gripper for safe grasping tasks by sampling through the predictions
+% \vspace{-0.15cm}
+% \item[-]Submitted a paper to \textbf{T-MECH} as first-author
+% \end{itemize}
+% \end{rSection}
+% %-----------------------------------------------------------------------------------
+
+% \begin{rSection}{Selected Group projects}
+%      \textbf{\large RoboMaster Competition}
+    
+%     \begin{itemize}
+%         \item[-] Design and build a squad of multi-purpose robots from scratch that are capable of completing different tasks required for the competition
+%         \vspace{-0.15cm}
+%         \item[-] Responsible for the system design of visual components(including object tracking and monocular vision) and the PID stability adjustment of the gimbal unit on the mobile tank (to prevent bumps and collisions during movement)
+%         \vspace{-0.15cm}
+%         \item [-] Divide the whole task into several modules for each group member as the leader of vision group
+%     \end{itemize}
+%     \textbf{\large National Undergraduate Electronic Design Contest (China)}
+%         \begin{itemize}
+%         \item[-] Design and build a single inverted pendulum system using PID controller of the DC motor
+%         \vspace{-0.15cm}
+%         \item[-] Design and build a wind panel control device that is capable of maintaining the panel at a target degree or rotating it at a constant angular velocity by controlling the motors on both sides (PID feedback)
+%         \vspace{-0.15cm}
+%         \item[-] Design and build a plate-ball control system that enables the ball to move across the plate through several target points by adjusting the pitch angle of the plate using vision-feedback control (with a camera fixed above the plate)
+%     \end{itemize}
+% \end{rSection}
+%-----------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------- 
+% \newpage
+\vspace{+0.3cm}
+\begin{rSection}{Honors and Awards}
+% \begin{rSubsection}{\textit {AWARDS}}{}{}{}
+% \item \textit{06/2016\ \ } China Undergraduate Mathematical Contest in Modelling (CUMCM) \hfill \textit{Second Prize}
+% \item \textit{03/2017\ \ } Zhou Peiyuan Mechanics Competition \hfill \textit{National Excellence Award}
+% \item \textit{05/2017\ \ } National Undergraduate Electronic Design Contest \hfill \textit{Successful Entry Certificate}
+% \item \textit{09/2017\ \ } Asia-Pacific Mathematical contest in modeling (APMCM) \hfill \textit{Second Prize}
+% \item \textit{01/2018\ \ } Mathematical Contest in Modeling (MCM/ICM) \hfill \textit{Honorable Mention}
+% \item \textit{08/2018\ \ } RM RoboMasters \hfill \textit{Second Prize}
+% \end{rSubsection}
+% \begin{rSubsection}{\textit {HONORS}}{}{}{}
+\textbf{Qualcomm Innovation Fellowship Finalist} \hfill 2026 \\
+\textbf{Best Paper Award, RSS Tac for FM Workshop} \hfill 2026 \\
+\textbf{Best Paper Award, NeurIPS Touch Processing Workshop} \hfill 2024 \\
+\textbf{Georgia Tech IRIM Robotics PhD Fellowship}  \\
+\textbf{National Scholarship from Chinese Ministry of Education} 
+% \item \textit{07/2018\ \ } Certificate for Attendance of CDIO 2018 Academy (Japan)
+% \item \textit{06/2019\ \ } Certificate of Excellent Graduate in Hebei Province
+% \end{rSubsection}
+%\\{\bf Second Prize in the 8th Structure Design Competition of BIT \hfill {Jun. 2015}
+%{\bf Diwen Scholarship} \hfill {Dec. 2015}
+\end{rSection}
+%-----------------------------------------------------------------------------------
+\begin{rSection}{Professional Service}
+\textbf{Workshop Co-organizer} -- Bimanual Dexterous Tool Use Workshop at CoRL 2026 \\
+\textbf{GT RoboGrads Executive Board} -- Research Vice President \\
+\textbf{Conference Session Chair} -- ACC \\
+\textbf{Conference Reviewer} -- ICRA, IROS, RSS, CoRL, NeurIPS, ICLR, AIM, SSRR \\
+\textbf{Journal Reviewer} -- RA-L, IEEE T-RL, OJ-CSYS \\
+\end{rSection}
+%   Standard Test
+%-----------------------------------------------------------------------------------
+% \begin{rSection}{Standard Tests}
+% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+% Test Date: \textit{24$^{th}$ Mar 2018} &  TOEFL Score 101 (101, R30, W26, L23, S22) \\
+% Test Date: \textit{7$^{th}$ Sep 2018} &  GRE Score 325 (V156, Q169, W3.5)
+% \end{tabular} 
+% \end{rSection}
+
+\begin{rSection}{Teaching Experience}
+\textbf{MAE145: Robotic Planning \& Estimation, UCSD} \hfill Winter 2021 \\
+\textbf{Teaching Assistant} \\
+\textbf{MAE146: Introduction to ML Algorithms, UCSD} \hfill Spring 2021 \\
+\textbf{Teaching Assistant}
+\end{rSection}
+
+\begin{rSection}{Research and Working Experience}
+\textbf{NVIDIA Seattle Robotics Lab} \hfill 05/2026 - Present \\
+\textbf{Research Intern} -- Humanoid robot learning from offline human manipulation videos. \\
+\textbf{Georgia Institute of Technology} \hfill 05/2022 - Present \\
+\textbf{Graduate Research Assistant} -- Structured robot learning for dexterous manipulation from human videos, tactile feedback, and behavioral dynamical systems. \\
+\textbf{Georgia Institute of Technology} \hfill 06/2021 - 05/2022 \\
+\textbf{Research Assistant} -- Robot learning and manipulation research before the Ph.D. program.
+\end{rSection}
+
+%-----------------------------------------------------------------------------------
+%   TECHNICAL STRENGTHS
+%-----------------------------------------------------------------------------------
+\begin{rSection}{TECHNICAL Skills}{}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming & \qquad C/C++, Python, MATLAB/Simulink\\
+Tool & \qquad PyTorch, STM32, ROS, Drake, Git, Linux, \LaTeX \\
+Language & \qquad Proficient in English and Chinese 
+\end{tabular} 
+\end{rSection}
+
+%-----------------------------------------------------------------------------------
+%	Activities SECTION
+%-----------------------------------------------------------------------------------
+% \begin{rSection}{EXTRACURRICULAR Activity}
+% %1
+% \begin{rSubsection}{..}{}{}{}
+% \item ...
+% \end{rSubsection}
+% \end{rSection}
+
+
+
+% \begin{rSection}{Technical Strengths}
+
+% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+% Computer Languages &  C/C++, MATLAB \\
+% Software \& Tools & HTML, LaTeX, Excel, Gerris, Mathematica, ASPEN Plus, Tecplot \\
+% \end{tabular}
+
+% \end{rSection}
+
+\end{document}
