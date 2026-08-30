@@ -908,8 +908,12 @@ h4 {
 .people-grid,
 .info-columns {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
+}
+
+.people-grid {
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
 }
 
 .info-columns {
@@ -945,6 +949,32 @@ h4 {
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.45;
+}
+
+.people-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.people-list li {
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 0.85rem 1rem;
+}
+
+.people-list a {
+  display: inline-block;
+  margin-bottom: 0.1rem;
+}
+
+.people-list span {
+  font-size: 0.92rem;
+}
+
+.collaborator-list li {
+  border-left-color: var(--gold);
 }
 
 .feature-project {
@@ -1074,6 +1104,10 @@ h4 {
 @media (max-width: 560px) {
   body {
     font-size: 16px;
+  }
+
+  .people-list {
+    grid-template-columns: 1fr;
   }
 
   .section-shell {
