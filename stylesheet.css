@@ -629,7 +629,7 @@ h4 {
 
 .selected-meta {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 0.34rem;
   margin: 0 0 0.68rem;
@@ -653,7 +653,7 @@ h4 {
 
 .selected-publication .selected-year {
   color: var(--accent-warm);
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 900;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -668,10 +668,20 @@ h4 {
   min-height: 1.55rem;
   border-radius: 999px;
   padding: 0.16rem 0.48rem;
-  font-size: 0.76rem;
+  font-size: 0.7rem;
   font-weight: 850;
   line-height: 1.2;
-  white-space: normal;
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .selected-publications {
+    grid-template-columns: 1fr;
+  }
+
+  .selected-publication {
+    grid-template-columns: minmax(180px, 280px) minmax(0, 1fr);
+  }
 }
 
 .selected-status {
@@ -1104,6 +1114,10 @@ h4 {
 @media (max-width: 560px) {
   body {
     font-size: 16px;
+  }
+
+  .selected-meta {
+    flex-wrap: wrap;
   }
 
   .people-list {
